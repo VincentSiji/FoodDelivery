@@ -25,7 +25,6 @@ const start = async () => {
 }
 
 start();
-module.exports = { client }
 
 
 
