@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://fooddelivery-12.onrender.com/get-price",
+      "url": "https://fooddelivery-13.onrender.com/get-price",
       "description": "Production server"
     }
   ],
@@ -47,16 +47,16 @@
         "type": "object",
         "properties": {
           "zone": {
-            "type": "central"
+            "type": "string"
           },
           "organization_id": {
-            "type": "43"
+            "type": "integer"
           },
           "total_distance": {
-            "type": "12"
+            "type": "number"
           },
           "item_type": {
-            "type": "perishable"
+            "type": "string"
           }
         }
       }
