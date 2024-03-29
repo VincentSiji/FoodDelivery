@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://fooddelivery-10.onrender.com/get-price",
+      "url": "https://fooddelivery-11.onrender.com/get-price",
       "description": "Production server"
     }
   ],
