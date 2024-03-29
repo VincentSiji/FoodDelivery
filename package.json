@@ -16,6 +16,9 @@
     "express-validator": "^7.0.1",
     "nodemon": "^3.1.0",
     "pg": "^8.11.3",
-    "rimraf": "^5.0.5"
+    "rimraf": "^5.0.5",
+    "swagger": "^0.7.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
   }
 }

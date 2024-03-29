@@ -4,7 +4,7 @@ const { body, validationResult } = require('express-validator');
 
 const calculatePrice = express.Router();
 
-calculatePrice.post('/',
+calculatePrice.post('/get-price',
     [
         body('zone').notEmpty().withMessage('Zone is required'),
         body('organization_id').notEmpty().withMessage('Organization Id is required'),

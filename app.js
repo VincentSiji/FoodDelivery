@@ -3,15 +3,18 @@ const dotenv = require('dotenv')
 const routes = require("./routes");
 const { Client } = require('pg');
 const calculatePrice = require('./src/controller/price');
+const swaggerUI = require('swagger-ui-express');
+const swaggerSpec = require('./swagger.json');
 
 dotenv.config();
 
 const { PORT } = process.env
 const port = PORT || 4001;
 const app = express();
+app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 app.use(express.json());
-// app.use(routes);
-app.use('/',calculatePrice)
+app.use(routes);
+// app.use('/',calculatePrice)
 // const client = new Client({ user: 'postgres', host: 'localhost', database: 'FoodDelivery', password: 'Azlogics', port: 5432, });
 
 const start = async () => {
