@@ -1,4 +1,4 @@
-const calculateItemPrice = async({ zone, organization_id, total_distance, item_type }) => {
+const calculateItemPrice = ({ zone, organization_id, total_distance, item_type }) => {
     try {
         const baseDistance = 5
         const basePrice = 10
